@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: hsl(224, 23%, 55%);
+  padding: 3.6rem;
+
+  background: url(images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 45rem;
+  box-shadow: 0 1.2rem 2.4rem rgb(0, 0, 0, 0.15);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 4.8rem;
+  text-align: center;
+  background: #fff;
+  /* border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px; */
+}
+
+.heading {
+  color: #000;
+  font-size: 2.7rem;
+  font-weight: 900;
+  margin-bottom: 1.8rem;
+}
+
+.sub-heading {
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.annual-plan-comp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  background: hsl(225, 100%, 98%);
+  padding: 1.8rem;
+  border-radius: 9px;
+}
+
+.annual-comp-left {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.annual-plan-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.7rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.change-link:link,
+.change-link:visited {
+  color: hsl(245, 75%, 52%);
+  font-weight: 500;
+  font-size: 1.7rem;
+
+  transition: all 0.5s;
+}
+
+.change-link:hover,
+.change-link:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.btn--proceed:link,
+.btn--proceed:visited {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  padding: 1.6rem;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+  box-shadow: 0 1.2rem 2.4rem rgb(0, 0, 0, 0.15);
+
+  transition: all 0.4s;
+}
+
+.btn--proceed:hover,
+.btn--proceed:active {
+  background-color: rgb(56, 41, 224, 0.8);
+}
+
+.btn--cancel:link,
+.btn--cancel:visited {
+  color: hsl(224, 23%, 55%);
+
+  transition: all 0.4s;
+}
+
+.btn--cancel:hover,
+.btn--cancel:active {
+  color: #000;
+}
+
+@media (max-width: 376px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background: url(images/pattern-background-mobile.svg), hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .annual-plan-comp {
+    padding: 1.4rem;
+    border-radius: 13px;
+  }
+}
